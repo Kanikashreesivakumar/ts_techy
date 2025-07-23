@@ -200,11 +200,6 @@ export default function Services() {
                       ))}
                     </div>
 
-                    {/* Learn more button */}
-                    <div className="flex items-center gap-2 text-amber-400 font-medium text-sm group-hover:gap-3 transition-all duration-300 cursor-pointer">
-                      <span>Learn More</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
                   </div>
 
                   {/* Enhanced hover indicators */}
