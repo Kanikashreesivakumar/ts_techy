@@ -20,7 +20,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here (integrate with Formspree or Netlify Forms)
+  
     console.log("Form submitted:", formData)
     setIsSubmitted(true)
     setTimeout(() => setIsSubmitted(false), 3000)
@@ -32,17 +32,17 @@ export default function ContactForm() {
 
   return (
     <section id="contact-form" className="py-24 px-4 sm:px-6 lg:px-8 relative">
-      {/* Enhanced background effects with improved white gradient visibility */}
+  
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/3 left-1/4 w-48 h-48 bg-amber-500/8 rounded-full blur-2xl animate-pulse"></div>
         <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-white/15 rounded-full blur-2xl animate-pulse animation-delay-2000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-blue-500/8 rounded-full blur-xl animate-pulse animation-delay-4000"></div>
-        {/* Additional white gradient for better content visibility */}
+        
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-black/30"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* Enhanced section header */}
+    
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/8 backdrop-blur-md rounded-full border border-amber-400/20 mb-8 hover:bg-white/12 transition-all duration-300">
             <Zap className="w-5 h-5 text-amber-400" />
@@ -62,16 +62,16 @@ export default function ContactForm() {
         </div>
 
         <div className="grid xl:grid-cols-2 gap-16">
-          {/* Enhanced contact form with improved visibility */}
+         
           <div className="relative">
-            {/* Enhanced multi-layer glow effect */}
+            
             <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-white/10 rounded-3xl blur-xl"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-white/5 rounded-3xl blur-2xl scale-105"></div>
 
-            {/* Enhanced form container with better contrast */}
+            
             <div className="relative p-10 bg-white/8 backdrop-blur-md rounded-3xl border border-white/15 hover:bg-white/12 transition-all duration-500 shadow-2xl">
               <form onSubmit={handleSubmit} className="space-y-8">
-                {/* Enhanced name field */}
+      
                 <div className="relative">
                   <div className="relative">
                     <User
@@ -84,7 +84,7 @@ export default function ContactForm() {
                       onChange={(e) => handleInputChange("name", e.target.value)}
                       onFocus={() => setFocusedField("name")}
                       onBlur={() => setFocusedField(null)}
-                      className="pl-12 h-16 bg-white/8 border-white/15 text-white placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 hover:bg-white/12 text-lg"
+                      className="pl-12 h-16 bg-white/8 border-white/15 text-black placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 hover:bg-white/12 text-lg"
                       required
                     />
                   </div>
@@ -93,7 +93,7 @@ export default function ContactForm() {
                   )}
                 </div>
 
-                {/* Enhanced email field */}
+    
                 <div className="relative">
                   <div className="relative">
                     <Mail
@@ -106,7 +106,7 @@ export default function ContactForm() {
                       onChange={(e) => handleInputChange("email", e.target.value)}
                       onFocus={() => setFocusedField("email")}
                       onBlur={() => setFocusedField(null)}
-                      className="pl-12 h-16 bg-white/8 border-white/15 text-white placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 hover:bg-white/12 text-lg"
+                      className="pl-12 h-16 bg-white/8 border-white/15 text-black placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 hover:bg-white/12 text-lg"
                       required
                     />
                   </div>
@@ -115,7 +115,7 @@ export default function ContactForm() {
                   )}
                 </div>
 
-                {/* Enhanced phone field */}
+                
                 <div className="relative">
                   <div className="relative">
                     <Phone
@@ -128,7 +128,7 @@ export default function ContactForm() {
                       onChange={(e) => handleInputChange("phone", e.target.value)}
                       onFocus={() => setFocusedField("phone")}
                       onBlur={() => setFocusedField(null)}
-                      className="pl-12 h-16 bg-white/8 border-white/15 text-white placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 hover:bg-white/12 text-lg"
+                      className="pl-12 h-16 bg-white/8 border-white/15 text-black placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 hover:bg-white/12 text-lg"
                     />
                   </div>
                   {focusedField === "phone" && (
@@ -136,7 +136,7 @@ export default function ContactForm() {
                   )}
                 </div>
 
-                {/* Enhanced message field */}
+                
                 <div className="relative">
                   <div className="relative">
                     <MessageSquare
@@ -148,7 +148,7 @@ export default function ContactForm() {
                       onChange={(e) => handleInputChange("message", e.target.value)}
                       onFocus={() => setFocusedField("message")}
                       onBlur={() => setFocusedField(null)}
-                      className="pl-12 pt-4 min-h-40 bg-white/8 border-white/15 text-white placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 resize-none hover:bg-white/12 text-lg"
+                      className="pl-12 pt-4 min-h-40 bg-white/8 border-white/15 text-black placeholder-gray-400 rounded-xl focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all duration-300 resize-none hover:bg-white/12 text-lg"
                       required
                     />
                   </div>
@@ -157,7 +157,7 @@ export default function ContactForm() {
                   )}
                 </div>
 
-                {/* Enhanced submit button */}
+                
                 <div className="flex justify-center pt-6">
                   <Button
                     type="submit"
@@ -183,7 +183,6 @@ export default function ContactForm() {
                 </div>
               </form>
 
-              {/* Enhanced success message */}
               {isSubmitted && (
                 <div className="mt-8 p-6 bg-amber-500/15 border border-amber-400/30 rounded-xl text-center backdrop-blur-md">
                   <p className="text-amber-400 font-semibold text-lg">
@@ -194,9 +193,9 @@ export default function ContactForm() {
             </div>
           </div>
 
-          {/* Enhanced contact information */}
+        
           <div className="space-y-8">
-            {/* Main contact card */}
+           =
             <div className="relative p-10 bg-white/8 backdrop-blur-md rounded-3xl border border-white/15 shadow-2xl">
               <h3 className="text-3xl font-bold text-white mb-8 bg-gradient-to-r from-amber-400 to-amber-300 bg-clip-text text-transparent">
                 Get In Touch
@@ -217,7 +216,7 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm mb-1">Phone</p>
-                    <p className="text-white font-semibold text-lg">+1 (555) 123-4567</p>
+                    <p className="text-white font-semibold text-lg">+91 7845105058</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
@@ -226,13 +225,13 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm mb-1">Location</p>
-                    <p className="text-white font-semibold text-lg">Digital Innovation Hub, Tech City</p>
+                    <p className="text-white font-semibold text-lg">Ts-Techy, Coimbatore ,Tamilnadu</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Response time card */}
+            
             <div className="relative p-8 bg-white/8 backdrop-blur-md rounded-3xl border border-white/15 shadow-2xl">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
@@ -249,7 +248,7 @@ export default function ContactForm() {
               </div>
             </div>
 
-            {/* Quick stats card */}
+         
             <div className="relative p-8 bg-white/8 backdrop-blur-md rounded-3xl border border-white/15 shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6">Why Contact Us?</h3>
               <div className="grid grid-cols-2 gap-4">

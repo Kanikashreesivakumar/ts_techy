@@ -26,10 +26,8 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Dynamic gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900/90 to-blue-950/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900/90 to-blue-950/70 pointer-events-none"></div>
 
-      {/* Floating geometric shapes - refined and reduced */}
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute w-4 h-4 border border-amber-400/20 rotate-45 animate-float"
@@ -59,9 +57,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left content */}
+        
           <div className="text-center lg:text-left space-y-8">
-            {/* Logo */}
+            
             <div className="flex justify-center lg:justify-start mb-8">
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-amber-400/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
@@ -69,15 +67,15 @@ export default function Hero() {
                   <Image
                     src="/images/ts-logo.webp"
                     alt="TS Techy Logo"
-                    width={80}
-                    height={80}
-                    className="w-20 h-20 object-contain"
+                    width={160}
+                    height={160}
+                    className="w-40 h-40 object-contain"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Main heading with golden colors */}
+           
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent animate-gradient">
@@ -94,26 +92,25 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* CTA Button with golden theme */}
-            <div className="flex justify-center lg:justify-start">
-              <Button
-                onClick={scrollToContact}
-                size="lg"
-                className="group relative px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 border-0 rounded-xl text-lg font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/25"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></span>
-                <span className="relative flex items-center gap-2 text-black font-bold">
-                  Get Free Consultation
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </Button>
-            </div>
+            
+            <div className="flex justify-center lg:justify-start z-30 relative">
+  <Button
+    onClick={scrollToContact}
+    size="lg"
+    className="group relative px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 border-0 rounded-xl text-lg font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/25"
+  >
+    <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></span>
+    <span className="relative flex items-center gap-2 text-black font-bold">
+      Get Free Consultation
+      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+    </span>
+  </Button>
+</div>
 
-            {/* Enhanced stats with golden accents */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center group">
                 <div className="text-2xl font-bold text-amber-400 group-hover:text-amber-300 transition-colors">
-                  500+
+                  100+
                 </div>
                 <div className="text-sm text-gray-400">Websites Optimized</div>
               </div>
@@ -130,13 +127,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right content - Enhanced 3D Floating elements */}
+         
           <div className="relative hidden lg:block">
             <div className="relative w-full h-96">
-              {/* Floating service icons with enhanced effects */}
+             
               <div className="absolute top-16 left-12 group">
                 <div className="relative p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-amber-400/20 animate-float hover:scale-110 transition-all duration-300 hover:-rotate-3">
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-Transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <Search className="w-10 h-10 text-amber-400 relative z-10" />
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-amber-400 rounded-full animate-ping opacity-75"></div>
                 </div>
@@ -173,7 +170,6 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Connecting lines */}
               <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20">
                 <defs>
                   <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -201,7 +197,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Enhanced scroll indicator */}
+    
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-amber-400/40 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-amber-400 rounded-full mt-2 animate-pulse"></div>

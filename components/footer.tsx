@@ -6,14 +6,14 @@ import Image from "next/image"
 export default function Footer() {
   return (
     <footer className="relative py-12 px-4 sm:px-6 lg:px-8">
-      {/* Enhanced gradient separator */}
+    
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto">
-        {/* Enhanced footer content */}
+    
         <div className="relative p-8 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:bg-white/8 transition-all duration-300">
           <div className="grid md:grid-cols-4 gap-8">
-            {/* Enhanced company info */}
+           
             <div className="md:col-span-2">
               <div className="flex items-center gap-4 mb-6">
                 <div className="relative group">
@@ -47,38 +47,37 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors duration-300">
                   <Phone className="w-4 h-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 7845105058</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors duration-300">
                   <MapPin className="w-4 h-4" />
-                  <span>Digital Innovation Hub, Tech City</span>
+                  <span>Ts-Techy ,Coimbatore ,Tamilnadu</span>
                 </div>
               </div>
             </div>
 
-            {/* Enhanced services */}
+
             <div>
               <h4 className="text-lg font-semibold text-amber-400 mb-4">Services</h4>
               <ul className="space-y-3">
-                <li className="text-gray-300 hover:text-amber-400 transition-colors duration-300 cursor-pointer hover:translate-x-1 transform transition-transform">
+                <li className="text-gray-300  ">
                   Keyword Research
                 </li>
-                <li className="text-gray-300 hover:text-amber-400 transition-colors duration-300 cursor-pointer hover:translate-x-1 transform transition-transform">
+                <li className="text-gray-300  ">
                   On-Page SEO
                 </li>
-                <li className="text-gray-300 hover:text-amber-400 transition-colors duration-300 cursor-pointer hover:translate-x-1 transform transition-transform">
+                <li className="text-gray-300 ">
                   SEO Analytics
                 </li>
-                <li className="text-gray-300 hover:text-amber-400 transition-colors duration-300 cursor-pointer hover:translate-x-1 transform transition-transform">
+                <li className="text-gray-300   ">
                   Digital Strategy
                 </li>
-                <li className="text-gray-300 hover:text-amber-400 transition-colors duration-300 cursor-pointer hover:translate-x-1 transform transition-transform">
+                <li className="text-gray-300 ">
                   Consultation
                 </li>
               </ul>
             </div>
 
-            {/* Enhanced social and quick links */}
             <div>
               <h4 className="text-lg font-semibold text-amber-400 mb-4">Connect With Us</h4>
               <div className="flex gap-4 mb-6">
@@ -107,7 +106,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Enhanced copyright */}
+        
           <div className="mt-8 pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-center md:text-left">

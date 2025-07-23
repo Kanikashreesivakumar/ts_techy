@@ -11,8 +11,8 @@ const features = [
       "Get premium SEO services at competitive prices with flexible packages tailored to your budget and business goals. No hidden fees, transparent pricing.",
     gradient: "from-amber-500 to-amber-600",
     accentColor: "amber",
-    image: "/images/affordable-plans.png",
-    stats: "Starting at $299/month",
+    image: "/e1.jpg",
+    stats: "Starting at 299/month",
     highlights: ["No Setup Fees", "Flexible Contracts", "Money-Back Guarantee"],
   },
   {
@@ -22,7 +22,7 @@ const features = [
       "Work with certified SEO professionals who stay updated with the latest algorithm changes and industry best practices. Our team has 10+ years of experience.",
     gradient: "from-blue-500 to-blue-600",
     accentColor: "blue",
-    image: "/images/expert-team.png",
+    image: "/e2.jpg",
     stats: "10+ Years Experience",
     highlights: ["Certified Professionals", "Continuous Training", "Proven Track Record"],
   },
@@ -33,7 +33,7 @@ const features = [
       "Track your progress with detailed analytics and see tangible improvements in your rankings, traffic, and conversions. We deliver results you can measure.",
     gradient: "from-amber-600 to-blue-600",
     accentColor: "amber",
-    image: "/images/measurable-results.png",
+    image: "/e3.jpg",
     stats: "Average 150% Growth",
     highlights: ["Detailed Reporting", "Real-Time Analytics", "ROI Tracking"],
   },
@@ -72,7 +72,6 @@ export default function WhyChooseUs() {
     return () => observer.disconnect()
   }, [])
 
-  // Auto-rotate active feature
   useEffect(() => {
     if (!isAutoRotating) return
 
@@ -85,12 +84,12 @@ export default function WhyChooseUs() {
   const handleFeatureClick = (index: number) => {
     setActiveFeature(index)
     setIsAutoRotating(false)
-    setTimeout(() => setIsAutoRotating(true), 10000) // Resume auto-rotation after 10 seconds
+    setTimeout(() => setIsAutoRotating(true), 10000) 
   }
 
   return (
     <section ref={sectionRef} className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Enhanced background with white accents */}
+     
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-20 w-56 h-56 bg-amber-500/8 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 -right-20 w-56 h-56 bg-white/12 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
@@ -98,7 +97,7 @@ export default function WhyChooseUs() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Enhanced section header */}
+        
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 backdrop-blur-md rounded-full border border-amber-400/20 mb-8 hover:bg-white/8 transition-all duration-300">
             <Award className="w-5 h-5 text-amber-400" />
@@ -117,9 +116,8 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        {/* Restructured dynamic layout with horizontal scrolling capability */}
         <div className="grid xl:grid-cols-2 gap-16 items-center">
-          {/* Left side - Interactive feature selector with enhanced design */}
+
           <div className="space-y-8">
             {features.map((feature, index) => {
               const Icon = feature.icon
@@ -135,7 +133,7 @@ export default function WhyChooseUs() {
                   style={{ transitionDelay: `${index * 200}ms` }}
                   onClick={() => handleFeatureClick(index)}
                 >
-                  {/* Enhanced multi-layer glow effect */}
+               
                   <div
                     className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} rounded-2xl blur-xl opacity-0 transition-opacity duration-700 ${
                       isActive ? "opacity-20" : "group-hover:opacity-15"
@@ -147,7 +145,6 @@ export default function WhyChooseUs() {
                     }`}
                   ></div>
 
-                  {/* Enhanced card with 3D effects */}
                   <div
                     className={`relative p-8 bg-white/5 backdrop-blur-md rounded-2xl border transition-all duration-700 ${
                       isActive
@@ -156,7 +153,7 @@ export default function WhyChooseUs() {
                     }`}
                   >
                     <div className="flex items-start gap-6">
-                      {/* Enhanced icon with 3D effect */}
+                 
                       <div
                         className={`w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-xl flex items-center justify-center transition-all duration-500 shadow-2xl ${
                           isActive ? "scale-110 rotate-6" : "group-hover:scale-105 group-hover:rotate-3"
@@ -194,7 +191,6 @@ export default function WhyChooseUs() {
                           {feature.description}
                         </p>
 
-                        {/* Feature highlights */}
                         <div className="flex flex-wrap gap-2">
                           {feature.highlights.map((highlight, idx) => (
                             <div
@@ -213,14 +209,12 @@ export default function WhyChooseUs() {
                       </div>
                     </div>
 
-                    {/* Active indicator with enhanced design */}
                     <div
                       className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${feature.gradient} transition-all duration-700 ${
                         isActive ? "opacity-100" : "opacity-0"
                       }`}
                     ></div>
 
-                    {/* Corner accent */}
                     <div
                       className={`absolute top-4 right-4 w-2 h-2 bg-amber-400 rounded-full transition-opacity duration-500 ${
                         isActive ? "opacity-100" : "opacity-0"
@@ -232,20 +226,20 @@ export default function WhyChooseUs() {
             })}
           </div>
 
-          {/* Right side - Enhanced dynamic visual showcase */}
+        
           <div className="relative">
             <div className="relative h-[500px] rounded-3xl overflow-hidden">
-              {/* Background image with enhanced effects */}
+      
               <img
                 src={features[activeFeature].image || "/placeholder.svg"}
                 alt={features[activeFeature].title}
                 className="w-full h-full object-cover transition-all duration-1000"
               />
 
-              {/* Enhanced overlay with gradient */}
+              
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
 
-              {/* Floating stats with enhanced design */}
+              
               <div className="absolute top-8 right-8 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl">
                 <div className="text-3xl font-bold text-amber-400 mb-1">{features[activeFeature].stats}</div>
                 <div className="text-sm text-gray-300">Success Metric</div>
@@ -256,7 +250,7 @@ export default function WhyChooseUs() {
                 </div>
               </div>
 
-              {/* Feature title overlay */}
+            
               <div className="absolute bottom-8 left-8 right-8">
                 <h3 className="text-3xl font-bold text-white mb-2">{features[activeFeature].title}</h3>
                 <div className="flex gap-2">
@@ -271,7 +265,6 @@ export default function WhyChooseUs() {
                 </div>
               </div>
 
-              {/* Feature indicators with enhanced design */}
               <div className="absolute bottom-8 right-8 flex gap-3">
                 {features.map((_, index) => (
                   <button
@@ -286,7 +279,6 @@ export default function WhyChooseUs() {
                 ))}
               </div>
 
-              {/* Enhanced animated elements */}
               <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-12 left-12 w-2 h-2 bg-amber-400 rounded-full animate-ping opacity-75"></div>
                 <div className="absolute bottom-16 right-16 w-1 h-1 bg-white rounded-full animate-pulse animation-delay-2000"></div>
@@ -294,7 +286,7 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            {/* Enhanced 3D floating elements around the showcase */}
+            
             <div className="absolute -top-6 -right-6 w-12 h-12 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl animate-float shadow-2xl flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-white" />
             </div>
@@ -306,10 +298,10 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        {/* Enhanced additional stats section */}
+       
         <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { icon: TrendingUp, value: "500+", label: "Projects Completed", gradient: "from-amber-500 to-amber-600" },
+            { icon: TrendingUp, value: "100+", label: "Projects Completed", gradient: "from-amber-500 to-amber-600" },
             { icon: Users, value: "95%", label: "Client Satisfaction", gradient: "from-blue-500 to-blue-600" },
             { icon: Clock, value: "24/7", label: "Support Available", gradient: "from-amber-600 to-blue-600" },
             { icon: Award, value: "5★", label: "Average Rating", gradient: "from-amber-500 to-amber-600" },
