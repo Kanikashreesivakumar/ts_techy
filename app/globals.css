@@ -125,7 +125,6 @@
   }
 }
 
-/* Enhanced animations with white accents */
 @keyframes float {
   0%,
   100% {
@@ -258,12 +257,11 @@
   animation-delay: 6s;
 }
 
-/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Enhanced scrollbar with white accents */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -281,7 +279,7 @@ html {
   background: linear-gradient(to bottom, #f59e0b, #b45309);
 }
 
-/* Enhanced glassmorphism effects */
+
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -300,7 +298,6 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Enhanced hover tilt effect */
 .tilt-hover {
   transition: transform 0.3s ease;
 }
@@ -309,7 +306,7 @@ html {
   transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.02);
 }
 
-/* Enhanced neon glow text */
+
 .neon-text {
   text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
 }
@@ -322,7 +319,7 @@ html {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Enhanced 3D button effect */
+
 .btn-3d {
   transform-style: preserve-3d;
   transition: transform 0.3s ease;
@@ -332,7 +329,7 @@ html {
   transform: translateZ(10px);
 }
 
-/* Enhanced particle animation */
+
 @keyframes particle-float {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -348,7 +345,7 @@ html {
   animation: particle-float 4s linear infinite;
 }
 
-/* Enhanced golden gradient text */
+
 .text-golden {
   background: linear-gradient(135deg, #f59e0b, #fbbf24, #f59e0b);
   background-size: 200% 200%;
@@ -367,13 +364,11 @@ html {
   animation: gradient 3s ease infinite;
 }
 
-/* Enhanced focus states */
 .focus-golden:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.5);
 }
 
-/* Card hover effects */
 .card-hover {
   transition: all 0.3s ease;
 }
@@ -383,7 +378,6 @@ html {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Staggered animation delays */
 .stagger-1 {
   animation-delay: 0.1s;
 }
@@ -400,7 +394,7 @@ html {
   animation-delay: 0.5s;
 }
 
-/* Responsive enhancements */
+
 @media (max-width: 768px) {
   .animate-float {
     animation-duration: 4s;
@@ -411,7 +405,6 @@ html {
   }
 }
 
-/* Performance optimizations */
 .will-change-transform {
   will-change: transform;
 }
@@ -420,7 +413,7 @@ html {
   will-change: opacity;
 }
 
-/* Accessibility improvements */
+
 @media (prefers-reduced-motion: reduce) {
   .animate-float,
   .animate-gradient,
@@ -434,7 +427,6 @@ html {
   }
 }
 
-/* Enhanced selection styles */
 ::selection {
   background: rgba(245, 158, 11, 0.3);
   color: white;
