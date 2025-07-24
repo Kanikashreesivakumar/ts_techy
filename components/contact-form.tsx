@@ -243,8 +243,8 @@ export default function ContactForm() {
                 We typically respond to all inquiries within 2-4 hours during business hours.
               </p>
               <div className="space-y-2 text-amber-400 font-medium">
-                <p>Mon - Fri: 9:00 AM - 6:00 PM EST</p>
-                <p>Sat - Sun: 10:00 AM - 4:00 PM EST</p>
+                <p>Mon - Fri: 9:00 AM - 6:00 PM </p>
+                
               </div>
             </div>
 

@@ -101,7 +101,7 @@ export default function Footer() {
               <div className="space-y-2">
                 <p className="text-sm text-gray-400">Business Hours:</p>
                 <p className="text-sm text-gray-300">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                <p className="text-sm text-gray-300">Sat - Sun: 10:00 AM - 4:00 PM</p>
+               
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
           <div className="mt-8 pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-center md:text-left">
-                © {new Date().getFullYear()} TS Techy. All rights reserved. | Transforming Ideas Into Impact
+                © {new Date().getFullYear()} TS Techy. All rights reserved.|Transforming Ideas Into Impact
               </p>
               <div className="flex gap-6 text-sm text-gray-400">
                 <a href="#" className="hover:text-amber-400 transition-colors duration-300">
