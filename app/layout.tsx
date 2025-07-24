@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ts-techy',
+  title: 'TS Techy SEO',
   icons: {
     icon: '/images/ts-logo.webp', 
   },
