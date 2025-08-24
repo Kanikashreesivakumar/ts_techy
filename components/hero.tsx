@@ -86,7 +86,7 @@ export default function Hero() {
               </h1>
 
               <p className="text-xl sm:text-2xl text-gray-300 max-w-2xl leading-relaxed">
-                At <span className="text-amber-400 font-semibold">TS Techy</span>, we help your website rank higher and
+                At <span className="text-amber-400 font-semibold">TS Techy</span>, We help your website rank higher and
                 convert better with data-driven SEO strategies that deliver{" "}
                 <span className="text-amber-300">measurable results</span>.
               </p>
