@@ -101,7 +101,7 @@ export default function Services() {
 					</div>
 					<h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
 						<span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-white bg-clip-text text-transparent animate-gradient">
-							Comprehensive SEO
+							Comprehensives SEO
 						</span>
 						<br />
 						<span className="text-white">Solutions</span>
