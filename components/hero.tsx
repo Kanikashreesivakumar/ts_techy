@@ -101,7 +101,7 @@ export default function Hero() {
   >
     <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-300 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></span>
     <span className="relative flex items-center gap-2 text-black font-bold">
-      Get Free Consultation
+      Get Free Consultations
       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
     </span>
   </Button>
@@ -110,7 +110,7 @@ export default function Hero() {
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center group">
                 <div className="text-2xl font-bold text-amber-400 group-hover:text-amber-300 transition-colors">
-                  100+
+                  90+
                 </div>
                 <div className="text-sm text-gray-400">Websites Optimized</div>
               </div>
