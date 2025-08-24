@@ -104,10 +104,10 @@ export default function Services() {
 							Comprehensive SEO
 						</span>
 						<br />
-						<span className="text-white">Solution</span>
+						<span className="text-white">Solutions</span>
 					</h2>
 					<p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-						Transform your digital presence with our data-driven SEO strategies
+						Transform your digital presence with our data-driven SEO strategie
 						designed to deliver{" "}
 						<span className="text-amber-400 font-semibold">measurable results</span>{" "}
 						and sustainable growth for your business.
