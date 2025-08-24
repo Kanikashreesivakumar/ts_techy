@@ -110,7 +110,7 @@ export default function Services() {
 						Transform your digital presence with our data-driven SEO strategie
 						designed to deliver{" "}
 						<span className="text-amber-400 font-semibold">measurable results</span>{" "}
-						and sustainable growth for your business.
+						and sustainable growth for your businesses.
 					</p>
 				</div>
 
