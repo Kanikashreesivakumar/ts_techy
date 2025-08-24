@@ -122,7 +122,7 @@ export default function Hero() {
                 <div className="text-2xl font-bold text-amber-400 group-hover:text-amber-300 transition-colors">
                   24/7
                 </div>
-                <div className="text-sm text-gray-400">Support</div>
+                <div className="text-sm text-gray-400">Supports</div>
               </div>
             </div>
           </div>
