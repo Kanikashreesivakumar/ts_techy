@@ -107,10 +107,10 @@ export default function Services() {
 						<span className="text-white">Solutions</span>
 					</h2>
 					<p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-						Transform your digital presence with our data-driven SEO strategie
+						Transform your digital presence with our data-driven SEO strategies
 						designed to deliver{" "}
 						<span className="text-amber-400 font-semibold">measurable results</span>{" "}
-						and sustainable growth for your businesses.
+						and sustainable growth for your business.
 					</p>
 				</div>
 
