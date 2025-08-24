@@ -101,10 +101,10 @@ export default function Services() {
 					</div>
 					<h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
 						<span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-white bg-clip-text text-transparent animate-gradient">
-							Comprehensives SEO
+							Comprehensive SEO
 						</span>
 						<br />
-						<span className="text-white">Solutions</span>
+						<span className="text-white">Solution</span>
 					</h2>
 					<p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
 						Transform your digital presence with our data-driven SEO strategies
